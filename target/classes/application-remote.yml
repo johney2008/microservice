@@ -1,0 +1,14 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: springcloud-config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/johney2008/microservice.git
+          search-paths: /src/main/resources/config
+          username: johney2008
+          password: PCSlee730225
